@@ -23,6 +23,15 @@ Sentinel value is 2 is this case.
 
 Using iterators, you will have access to 42 and 1337.
 
+
+```
+std::vector<int> v{100,200,300};
+SentinelArray<int, 10> a(v.begin(), v.end())  // 7 undefined values after 3rd element
+for (auto i : a)
+ std::cout << i << ",";
+```
+> 100,200,300
+
 ---
 
 
