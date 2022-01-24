@@ -37,5 +37,26 @@ for (auto i : a)
 
 ### TODO list:
 
-- Add `__cplusplus` macro check and write constexpr methods for *std > c++17*
-- Implement a better GPU macros support (`__global__`, `KOKKOS_*`, etc.)
+-  Add tests !!!!!
+- Implement better GPU macros support (`__global__`, `KOKKOS_*`, etc.)
+- Add override method or support for :
+  - [ ] fill
+  - [ ] swap
+  - [ ] operator==
+  - [ ] operator!=
+  - [ ] operator<
+  - [ ] operator<=
+  - [ ] operator>
+  - [ ] operator>=
+  - [ ] operator<=>
+  - [ ] std::get
+  - [ ] std::swap
+  - [ ] to_array
+  - [ ] std::tuple_size
+- Add `__cplusplus` macro check and write constexpr methods for *std > c++17. Reminder:*
+  - C++ pre-C++98: `__cplusplus` is 1`
+  - C++98: `__cplusplus` is `199711L`
+  - C++11: `__cplusplus` is `201103L`
+  - C++14: `__cplusplus` is `201402L`
+  - C++17: `__cplusplus` is `201703L`
+  - C++20: `__cplusplus` is `202002L`
